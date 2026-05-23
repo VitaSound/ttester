@@ -1,10 +1,18 @@
 # ttester (VitaSound fork)
 
+[Русская версия](README.ru.md)
+
 A utility for testing Forth words, originally by John Hayes (1995, JHU/APL)
 with subsequent revisions by Anton Ertl, David N. Williams, Krishna Myneni,
 and C. G. Montgomery.
 
 This is a fork maintained at https://github.com/VitaSound/ttester.
+
+Part of the [VitaSound Forth tooling family](https://github.com/VitaSound):
+[fmix](https://github.com/VitaSound/fmix) (build tool / package manager /
+test runner), [flint](https://github.com/VitaSound/flint) (linter),
+ttester (this fork), [fenum](https://github.com/VitaSound/fenum)
+(universal containers).
 
 ## Upstream
 

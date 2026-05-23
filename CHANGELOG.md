@@ -5,6 +5,16 @@ All notable changes to this VitaSound fork of ttester are documented here.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and
 this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+
+### Added
+- `LICENSE` file (the source already named public domain, the file was
+  just missing).
+- `README.ru.md` — full Russian translation.
+- README links into the VitaSound tooling family (fmix / flint / fenum).
+- `package.4th`: added `main`, `tags`, switched `license` to the
+  hyphenated `public-domain` token.
+
 ## [1.2.0] - 2026-05-23
 
 ### Added
