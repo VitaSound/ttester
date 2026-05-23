@@ -1,0 +1,33 @@
+# Change Log
+
+All notable changes to this VitaSound fork of ttester are documented here.
+
+The format is based on [Keep a Changelog](http://keepachangelog.com/) and
+this project adheres to [Semantic Versioning](http://semver.org/).
+
+## [1.2.0] - 2026-05-23
+
+### Added
+
+- `ttester-ext.4th` — extensions on top of upstream `ttester.4th`:
+  - Predicates: `expect-true`, `expect-false`, `expect-eq`, `expect-not-eq`,
+    `expect-depth`, `expect-stack-clean`, `expect-stack-balanced`,
+    `expect-str-eq`.
+  - Fixture hooks: deferred `test-setup` / `test-teardown` plus `TS{ ... }ST`
+    block that runs them around a normal `T{ ... }T`.
+  - All assertions route through ttester's vectored `ERROR`, so `#ERRORS`
+    and `ERROR-XT` continue to work for both upstream `T{` and the new
+    predicates.
+- `tests/ttester_ext_test.4th` — covers every predicate (positive + negative
+  case) and the fixture mechanism.
+- `README.md`, `CHANGELOG.md`.
+
+### Unchanged
+
+- `ttester.4th` is kept identical to upstream so this fork can track future
+  revisions from the Hayes / Anton Ertl line.
+
+## [1.1.0]
+
+Initial import (corresponds to upstream `ttester.fs` 1.1.0 as shipped via
+fmix `forth-packages/ttester/1.1.0/`).
