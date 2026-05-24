@@ -7,13 +7,21 @@ this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.2.1] - 2026-05-24
+
 ### Added
 - `LICENSE` file (the source already named public domain, the file was
   just missing).
-- `README.ru.md` — full Russian translation.
-- README links into the VitaSound tooling family (fmix / flint / fenum).
+- `README.ru.md` — full Russian translation, including a new
+  "Публикация на theforth.net" section with archive-format and
+  versioning guidelines.
+- README links into the VitaSound tooling family (fmix / flint /
+  fcov / fsemver / fenum).
 - `package.4th`: added `main`, `tags`, switched `license` to the
-  hyphenated `public-domain` token.
+  hyphenated `public-domain` token, and declared
+  `key-value fcov ~> 0.3` so this repo participates in
+  ecosystem-wide coverage collection.
+- `.gitignore` created (`build/`, `forth-packages/`, `.fcov/`).
 
 ## [1.2.0] - 2026-05-23
 

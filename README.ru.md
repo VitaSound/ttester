@@ -89,6 +89,42 @@ TS{ project.modules@ ulist-len 0 expect-eq -> }ST
 В режиме `fmix test --shared` не забудьте сбросить хуки в конце файла
 (`' noop is test-setup ...`), иначе они утекут в следующий тест.
 
+## Публикация на theforth.net
+
+[theforth.net](https://theforth.net/) — официальный реестр
+Forth-пакетов. ttester отлично туда ложится, потому что не требует
+никакой инфраструктуры — обычный одиночный `.4th`-файл.
+
+Краткая инструкция (по [guidelines](https://theforth.net/guidelines)):
+
+1. Создай аккаунт: <https://theforth.net/profile>.
+
+2. Проверь `package.4th` — у ttester он уже под guidelines:
+   обязательные поля (`name`, `version` `MAJOR.MINOR.PATCH`,
+   `license`, `main`) и желательные (`description`, `tags`).
+
+3. Собери архив. **Корневая папка в архиве должна точно совпадать с
+   полем `name`** (`ttester`), и `package.4th` лежит в её корне:
+
+   ```bash
+   cd ~                                              # на уровень выше ttester/
+   tar czf ttester-1.2.0.tar.gz \
+       --exclude='ttester/.git' \
+       --exclude='ttester/forth-packages' \
+       --exclude='ttester/build' \
+       ttester
+   ```
+
+4. Залогинься на theforth.net, перейди в
+   [Profile](https://theforth.net/profile) и загрузи архив через форму
+   upload.
+
+5. После публикации НЕ меняй `version` для уже выложенного слота —
+   повышай его по SemVer:
+   - **PATCH** — обратно-совместимый багфикс,
+   - **MINOR** — обратно-совместимое добавление функциональности,
+   - **MAJOR** — несовместимое изменение API.
+
 ## Лицензия
 
 `ttester.4th` — public domain (по шапке апстрима).
