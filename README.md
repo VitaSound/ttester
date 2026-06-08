@@ -1,5 +1,7 @@
 # ttester (VitaSound fork)
 
+[![Cov](https://img.shields.io/badge/Cov-29%25-red.svg)](https://github.com/VitaSound/ttester)
+
 [Русская версия](README.ru.md)
 
 A utility for testing Forth words, originally by John Hayes (1995, JHU/APL)
