@@ -4,6 +4,7 @@ forth-package
     key-value description Testing utility for Forth words (Hayes/Ertl upstream + VitaSound extensions)
     key-value license public-domain
     key-value main ttester.4th
+    key-value flint ~> 0.2
     key-value fcov ~> 0.3
     key-list tags testing
     key-list tags ttester

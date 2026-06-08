@@ -108,7 +108,7 @@ Forth-пакетов. ttester отлично туда ложится, потом
 
    ```bash
    cd ~                                              # на уровень выше ttester/
-   tar czf ttester-1.2.0.tar.gz \
+   tar czf ttester-1.2.1.tar.gz \
        --exclude='ttester/.git' \
        --exclude='ttester/forth-packages' \
        --exclude='ttester/build' \
