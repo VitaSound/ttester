@@ -89,6 +89,11 @@ Remember to reset the hooks (`' noop is test-setup ...`) at the end of a
 test file when running in `fmix test --shared` mode, otherwise the next
 file inherits them.
 
+## VitaSound ecosystem
+
+- [feco](https://github.com/VitaSound/feco) — catalog of the Forth toolchain: versions, coverage, bulk clone and install
+- [MIT](https://github.com/VitaSound/MIT) — engineering methodology: task decomposition and hardware/software stack levels
+
 ## License
 
 `ttester.4th`: public domain (per the upstream header).
